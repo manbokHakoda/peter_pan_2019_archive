@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Питер Пэн · 2019 | Жүжгийн архив</title>
+  <meta name="description" content="2019 оны Питер Пэн хүүхдийн мюзиклийн түүх, жүжигчид, гэрэл зураг болон видео архив.">
+  <meta name="theme-color" content="#100e0b">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="logo" href="#home">P<span>·</span>P
+    <small>2019 ARCHIVE</small>
+  </a>
+  <button class="menu-toggle" id="menuToggle"
+          aria-label="Цэс нээх" aria-expanded="false">☰</button>
+  <nav id="nav">
+    <a href="#story">Түүх</a>
+    <a href="#gallery">Зургийн архив</a>
+    <a href="#actors">Жүжигчид</a>
+    <a href="#video">Видео</a>
+    <a href="#contact">Холбоо барих</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="hero-stars">✦ · ✧ · ✦</div>
+    <p class="eyebrow">ХҮҮХДИЙН МЮЗИКЛ · 2019</p>
+    <h1>ПИТЕР <span>ПЭН</span></h1>
+    <p class="hero-subtitle">Хэзээ ч өсөхгүй хүүгийн ид шидийн аялал</p>
+    <p class="hero-copy">
+      Тайзны дурсамж, жүжигчдийн бүтээл, гэрэл зураг болон
+      видео бичлэгийг хадгалсан дурсгалын архив.
+    </p>
+    <div class="hero-actions">
+      <a class="button button-gold" href="#gallery">Архив үзэх ↗</a>
+      <a class="button button-outline" href="#story">Түүхийг унших</a>
+    </div>
+    <div class="hero-bottom">
+      <span>УЛААНБААТАР · МОНГОЛ</span>
+      <span>MEMORIES FROM THE STAGE</span>
+    </div>
+  </section>
+
+  <section class="section" id="story">
+    <div class="section-heading">
+      <p class="eyebrow">01 / THE STORY</p>
+      <h2>Тайзнаа амилсан <span>үлгэр</span></h2>
+    </div>
+    <div class="story-grid">
+      <div>
+        <p class="lead">
+          2019 онд тайзнаа тавигдсан “Питер Пэн” хүүхдийн
+          мюзиклийн дурсамжийг хойч үедээ үлдээх архив.
+        </p>
+        <p>
+          Питер Пэн, Вэнди болон Алдагдсан хөвгүүдийн адал явдал
+          нь төсөөлөл, нөхөрлөл, зориг, хүүхэд насны гайхамшгийг
+          өгүүлнэ. Энэхүү архив нь жүжигт оролцсон уран бүтээлчид,
+          гэрэл зураг болон бичлэгүүдийг нэг дор хадгалах зорилготой.
+        </p>
+        <p class="notice">
+          Жүжигчдийн нэр, дүр болон түүхэн мэдээллийг нийтлэхийн
+          өмнө албан ёсны эх сурвалжаар баталгаажуулна уу.
+        </p>
+      </div>
+
+      <aside class="fact-card">
+        <p class="eyebrow">ТОГЛОЛТЫН МЭДЭЭЛЭЛ</p>
+        <h3>Питер Пэн</h3>
+        <p>Хүүхдийн мюзикл</p>
+        <hr>
+        <dl>
+          <dt>Он</dt><dd>2019</dd>
+          <dt>Байршил</dt><dd>Улаанбаатар, Монгол</dd>
+          <dt>Продюсер</dt><dd>М. Халиунбат</dd>
+          <dt>Найруулагч</dt><dd>Э. Мөнхтөр</dd>
+          <dt>Байгууллага</dt>
+          <dd>Нийслэлийн Улаанбаатар чуулган</dd>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section gallery-section" id="gallery">
+    <div class="section-heading">
+      <p class="eyebrow">02 / PHOTO ARCHIVE</p>
+      <h2>Тайзны <span>дурсамж</span></h2>
+      <p>Зураг дээр дарж томруулан үзээрэй.</p>
+    </div>
+    <div class="gallery-grid" id="galleryGrid"></div>
+  </section>
+
+  <section class="section" id="actors">
+    <div class="section-heading">
+      <p class="eyebrow">03 / CAST & CHARACTERS</p>
+      <h2>Жүжигчид ба <span>дүрүүд</span></h2>
+      <p>Жүжигчний зураг дээр дарж дэлгэрэнгүй мэдээллийг үзнэ үү.</p>
+    </div>
+
+    <div class="actor-tools">
+      <input id="actorSearch" type="search"
+             placeholder="Жүжигчний нэр эсвэл дүр..."
+             aria-label="Жүжигчин хайх">
+      <select id="actorCategory" aria-label="Дүрийн ангилал">
+        <option value="all">Бүх ангилал</option>
+        <option>Гол дүр</option>
+        <option>Далайн дээрэмчин</option>
+        <option>Алдагдсан хөвгүүд</option>
+        <option>Дарлингийн гэр бүл</option>
+        <option>Жүжигчин</option>
+      </select>
+    </div>
+
+    <p id="actorCount" class="result-count" aria-live="polite"></p>
+    <div class="actors-grid" id="actorsGrid"></div>
+  </section>
+
+  <section class="section" id="video">
+    <div class="section-heading">
+      <p class="eyebrow">04 / VIDEO ARCHIVE</p>
+      <h2>Видео <span>архив</span></h2>
+      <p>2019 оны тоглолтын бичлэг.</p>
+    </div>
+
+    <div class="video-card">
+      <div class="video-frame">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/0-kYbIQoJ9c"
+          title="Питер Пэн 2019 — видео архив"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <p class="small">
+        Видео тоглуулахад YouTube-ийн үйлчилгээ ашиглагдана.
+      </p>
+      <a class="text-link"
+         href="https://www.youtube.com/watch?v=0-kYbIQoJ9c"
+         target="_blank" rel="noopener noreferrer">
+        YouTube дээр үзэх ↗
+      </a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <p class="eyebrow">05 / CREDITS</p>
+      <h2>Уран бүтээлийн <span>баг</span></h2>
+    </div>
+    <div class="credits-grid">
+      <article class="credit-card">
+        <span>01</span><h3>Продюсер</h3><p>М. Халиунбат</p>
+      </article>
+      <article class="credit-card">
+        <span>02</span><h3>Найруулагч</h3><p>Э. Мөнхтөр</p>
+      </article>
+      <article class="credit-card">
+        <span>03</span><h3>Байгууллага</h3>
+        <p>Нийслэлийн Улаанбаатар чуулган</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section about-archive">
+    <p class="eyebrow">ABOUT THIS ARCHIVE</p>
+    <h2>Дурсамжийг <span>хадгалъя</span></h2>
+    <p>
+      Энэ сайт нь 2019 оны жүжгийн дурсамж, уран бүтээлчид
+      болон архивын материалыг танилцуулах зорилготой.
+    </p>
+    <p class="small">
+      Зураг, видео, нэр болон бусад материалыг ашиглах эрх,
+      зөвшөөрлийг нийтлэхээс өмнө нягтална.
+    </p>
+  </section>
+</main>
+
+<footer class="footer" id="contact">
+  <a class="logo" href="#home">P<span>·</span>P
+    <small>2019 ARCHIVE</small>
+  </a>
+  <p>Питер Пэн · 2019 — дурсамжийн архив</p>
+  <div class="footer-links">
+    <a href="privacy.html">Нууцлалын бодлого</a>
+    <a href="terms.html">Ашиглах нөхцөл</a>
+    <a href="mailto:manbokhakoda1020@gmail.com">Холбоо барих</a>
+  </div>
+  <p class="copyright">
+    © <span id="year"></span> Peter Pan 2019 Archive
+  </p>
+</footer>
+
+<!-- Зураг томруулах цонх -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose"
+          aria-label="Хаах">×</button>
+  <button class="lightbox-prev" id="lightboxPrev"
+          aria-label="Өмнөх зураг">‹</button>
+  <figure>
+    <img id="lightboxImage" src="" alt="">
+    <figcaption id="lightboxCaption"></figcaption>
+  </figure>
+  <button class="lightbox-next" id="lightboxNext"
+          aria-label="Дараагийн зураг">›</button>
+</div>
+
+<!-- Жүжигчний дэлгэрэнгүй профайл -->
+<div class="profile-modal" id="profileModal"
+     aria-hidden="true" role="dialog"
+     aria-modal="true" aria-labelledby="profileName">
+  <div class="profile-panel">
+    <button class="profile-close" id="profileClose"
+            type="button" aria-label="Профайл хаах">×</button>
+
+    <div class="profile-photo">
+      <img id="profileImage" src="" alt="">
+      <div id="profileFallback" class="profile-fallback">🎭</div>
+    </div>
+
+    <div class="profile-info">
+      <p class="eyebrow">PETER PAN · 2019 CAST</p>
+      <h2 id="profileName">Жүжигчний нэр</h2>
+      <p class="profile-role" id="profileRole"></p>
+      <span class="profile-category" id="profileCategory"></span>
+      <div class="profile-divider"></div>
+      <h3>Танилцуулга</h3>
+      <p id="profileBio" class="profile-bio"></p>
+      <p class="profile-note">
+        Дүрийн мэдээллийг архивын бүртгэлд үндэслэн харуулав.
+      </p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
