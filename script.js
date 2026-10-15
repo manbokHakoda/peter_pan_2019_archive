@@ -5,10 +5,128 @@
    1. ЗУРГИЙН АРХИВ
 ===================================== */
 
-const galleryPhotos = Array.from({ length: 30 }, (_, i) => ({
-  src: `photos/image${i + 1}.jpg`,
-  title: `Тайзны дурсамж ${String(i + 1).padStart(2, "0")}`
-}));
+const galleryPhotos = [
+  {
+    src: "https://i.postimg.cc/qMLVbbmQ/image1.jpg",
+    title: "Тайзны дурсамж 01"
+  },
+  {
+    src: "https://i.postimg.cc/GhQw77MK/image2.jpg",
+    title: "Тайзны дурсамж 02"
+  },
+  {
+    src: "https://i.postimg.cc/Hs2DZZS6/image3.jpg",
+    title: "Тайзны дурсамж 03"
+  },
+    {
+    src: "https://i.postimg.cc/9Fp588x8/image4.jpg",
+    title: "Тайзны дурсамж 01"
+  },
+  {
+    src: "https://i.postimg.cc/9Fp588xs/image5.jpg",
+    title: "Тайзны дурсамж 02"
+  },
+  {
+    src: "https://i.postimg.cc/c4my999W/image6.jpg",
+    title: "Тайзны дурсамж 03"
+  },
+    {
+    src: "https://i.postimg.cc/TY9M777M/image7.jpg",
+    title: "Тайзны дурсамж 01"
+  },
+  {
+    src: "https://i.postimg.cc/MKD2PPPq/image8.jpg",
+    title: "Тайзны дурсамж 02"
+  },
+  {
+    src: "https://i.postimg.cc/Z55k182Z/image9.jpg",
+    title: "Тайзны дурсамж 03"
+  },
+    {
+    src: "https://i.postimg.cc/RZZrj7yM/image10.jpg",
+    title: "Тайзны дурсамж 01"
+  },
+  {
+    src: "https://i.postimg.cc/HkkGfwRY/image11.jpg",
+    title: "Тайзны дурсамж 02"
+  },
+  {
+    src: "https://i.postimg.cc/Sxx0w63Q/image12.jpg",
+    title: "Тайзны дурсамж 03"
+  },
+    {
+    src: "https://i.postimg.cc/YCCcJ6Zh/image13.jpg",
+    title: "Тайзны дурсамж 01"
+  },
+  {
+    src: "https://i.postimg.cc/FHHt2y81/image14.jpg",
+    title: "Тайзны дурсамж 02"
+  },
+  {
+    src: "https://i.postimg.cc/wjjKSXZ1/image15.jpg",
+    title: "Тайзны дурсамж 03"
+  },
+    {
+    src: "https://i.postimg.cc/y88qwmt3/image16.jpg",
+    title: "Тайзны дурсамж 01"
+  },
+  {
+    src: "https://i.postimg.cc/QddLRQwp/image17.jpg",
+    title: "Тайзны дурсамж 02"
+  },
+  {
+    src: "https://i.postimg.cc/8zz8qR9R/image18.jpg",
+    title: "Тайзны дурсамж 03"
+  },
+    {
+    src: "https://i.postimg.cc/qvvf9sSc/image19.jpg",
+    title: "Тайзны дурсамж 01"
+  },
+  {
+    src: "https://i.postimg.cc/YCDck4Bv/image20.jpg",
+    title: "Тайзны дурсамж 02"
+  },
+  {
+    src: "https://i.postimg.cc/bwVX8Gft/image21.jpg",
+    title: "Тайзны дурсамж 03"
+  },
+    {
+    src: "https://i.postimg.cc/Z5skZ9z3/image22.jpg",
+    title: "Тайзны дурсамж 01"
+  },
+  {
+    src: "https://i.postimg.cc/P5VGhLnY/image23.jpg",
+    title: "Тайзны дурсамж 02"
+  },
+  {
+    src: "https://i.postimg.cc/jS3VKWYy/image24.jpg",
+    title: "Тайзны дурсамж 03"
+  },
+    {
+    src: "https://i.postimg.cc/sgHFyBCT/image25.jpg",
+    title: "Тайзны дурсамж 01"
+  },
+  {
+    src: "https://i.postimg.cc/Mp3kxcJs/image26.jpg",
+    title: "Тайзны дурсамж 02"
+  },
+  {
+    src: "https://i.postimg.cc/4x2CZKR2/image27.jpg",
+    title: "Тайзны дурсамж 03"
+  },
+    {
+    src: "https://i.postimg.cc/nhS8Zsfw/image28.jpg",
+    title: "Тайзны дурсамж 01"
+  },
+  {
+    src: "https://i.postimg.cc/y8pqBJC5/image29.jpg",
+    title: "Тайзны дурсамж 02"
+  },
+  {
+    src: "https://i.postimg.cc/sgHFyBCq/image30.jpg",
+    title: "Тайзны дурсамж 03"
+  }
+];
 
 /* =====================================
    2. ЖҮЖИГЧДИЙН МЭДЭЭЛЭЛ
@@ -19,105 +137,105 @@ const actors = [
     id: 1,
     name: "Б.Амарбаясгалан",
     role: "Ахмад Хүүк, Старки",
-    image: "images/amarbayasgalan.jpg",
+    image: "https://i.postimg.cc/KjzC3xbG/amarbayasgalan.jpg",
     category: "Далайн дээрэмчин"
   },
   {
     id: 2,
     name: "Б.Анхтуяа",
     role: "Майкл, Зоригт охид",
-    image: "images/ankhtuya.jpg",
+    image: "https://i.postimg.cc/zvB4H8Nv/ankhtuya.jpg",
     category: "Жүжигчин"
   },
   {
     id: 3,
     name: "Б.Ариунсувд",
     role: "Вэнди",
-    image: "images/ariunsuvd.jpg",
+    image: "https://i.postimg.cc/XqJtB4Wp/ariunsuvd.jpg",
     category: "Гол дүр"
   },
   {
     id: 4,
     name: "Б.Батдэмбэрэл",
     role: "Ахмад Хүүк",
-    image: "images/batdemberel.jpg",
+    image: "https://i.postimg.cc/fyL1SDsL/batdemberel.jpg",
     category: "Далайн дээрэмчин"
   },
   {
     id: 5,
     name: "М.Энх-Үйлс",
     role: "Лиза, асрагч",
-    image: "images/enkh-uyls.jpg",
+    image: "https://i.postimg.cc/1Xj2p2Rs/enkh-uyls.jpg",
     category: "Жүжигчин"
   },
   {
     id: 6,
     name: "М.Эрдэмтөгс",
     role: "Ноён Дарлинг",
-    image: "images/erdemtugs.jpg",
+    image: "https://i.postimg.cc/RhDycyCM/erdemtugs.jpg",
     category: "Дарлингийн гэр бүл"
   },
   {
     id: 7,
     name: "П.Ихэрбаяр",
     role: "Сми",
-    image: "images/ikherbayar.jpg",
+    image: "https://i.postimg.cc/kGpzxzMM/ikherbayar.jpg",
     category: "Далайн дээрэмчин"
   },
   {
     id: 8,
     name: "Хакода Манбок",
     role: "Алдагдсан хөвгүүд",
-    image: "images/hakoda-manbok.jpg",
+    image: "https://i.postimg.cc/RhDycyCv/hakoda-manbok.jpg",
     category: "Алдагдсан хөвгүүд"
   },
   {
     id: 9,
     name: "Ц.Мичидмаа",
     role: "Жон, далайн дээрэмчин",
-    image: "images/michidmaa.jpg",
+    image: "https://i.postimg.cc/0jBFpF5k/michidmaa.jpg",
     category: "Жүжигчин"
   },
   {
     id: 10,
     name: "С.Мөнхгэрэл",
     role: "Питер Пэн",
-    image: "images/munkhgerel.jpg",
+    image: "https://i.postimg.cc/Y0sZ1Z29/munkhgerel.jpg",
     category: "Гол дүр"
   },
   {
     id: 11,
     name: "Г.Номулин",
     role: "Жүкэс",
-    image: "images/nomulin.jpg",
+    image: "https://i.postimg.cc/ZnM2r2Y0/nomulin.jpg",
     category: "Далайн дээрэмчин"
   },
   {
     id: 12,
     name: "Д.Нямтулга",
     role: "Жон, Дарлингийн хүү",
-    image: "images/nyamtulga.jpg",
+    image: "https://i.postimg.cc/j2Fmzmq2/nyamtulga.jpg",
     category: "Дарлингийн гэр бүл"
   },
   {
     id: 13,
     name: "Б.Тэргэл",
     role: "Слайтли",
-    image: "images/tergel.jpg",
+    image: "https://i.postimg.cc/zvc6n6DR/tergel.jpg",
     category: "Алдагдсан хөвгүүд"
   },
   {
     id: 14,
     name: "М.Өлзийхишиг",
     role: "Кэкко, далайн дээрэмчин",
-    image: "images/ulziikhishig.jpg",
+    image: "https://i.postimg.cc/ZnM2r2Yr/ulziikhishig.jpg",
     category: "Жүжигчин"
   },
   {
     id: 15,
     name: "Э.Золзаяа",
     role: "Нүүдлэр, далайн дээрэмчин",
-    image: "images/zolzaya.jpg",
+    image: "https://i.postimg.cc/3NcVgVrj/zolzaya.jpg",
     category: "Жүжигчин"
   }
 ];
